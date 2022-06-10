@@ -38,10 +38,10 @@ router.route('/:id').get((req, res) => {
   });  
   router.route('/update/:id').post((req, res) => {  
     History.findById(req.params.id)  
-      .then(History => {  
-        History.title = req.body.title;  
-        History.description = req.body.description;  
-        History.imageURL = req.body.imageURL;   History.save()
+      .then(history => {  
+        history.title = req.body.title;  
+        history.description = req.body.description;  
+        history.imageURL = req.body.imageURL;   History.save()
        
         .then(() => res.json('Historical location updated!'))  
           .catch(err => res.status(400).json('Error: ' + err));  

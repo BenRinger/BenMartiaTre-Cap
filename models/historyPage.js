@@ -3,13 +3,13 @@ const Schema = mongoose.Schema;
 
 const historySchema = new Schema({
     title: {
-    required: true
+        type: String,
         },
 description: { 
-    required: true
+        type: String,
 },
 imageURL: {  
-    Type: String
+        type: String,
     }
 });
 

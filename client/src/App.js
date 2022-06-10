@@ -5,6 +5,8 @@ import Home from './components/Home';
 import FoodPage from './components/FoodPage';
 // Page & Component Imports
 import Navbar from './components/Navbar'
+import Event from './components/Events'
+import History from './components/Historical'
 
 
 
@@ -27,6 +29,8 @@ export default class App extends Component {
         <Route path='/Contact' component={Contact}/> */}
         <Route path='/food' component={FoodPage} />
         <Route path='/brew' component={BrewPage} />
+        <Route path='/event' component={Event} />
+        <Route path='/history' component={History} />
 
       </Router>
     </div>
