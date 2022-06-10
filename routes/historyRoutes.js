@@ -5,7 +5,7 @@ const History = require('../models/eventsPage');
 
 router.route('/').get((req, res) => {
     History.find()
-        .then(history => res.json(history))
+        .then(History => res.json(History))
         .catch(err => res.status(400).json('Error: ' + err));
 });
 
@@ -27,7 +27,7 @@ router.route('/add').post((req, res) => {
 
 router.route('/:id').get((req, res) => {  
     History.findById(req.params.id)  
-      .then(history => res.json(history))  
+      .then(History => res.json(History))  
       .catch(err => res.status(400).json('Error: ' + err));  
   });  
 
@@ -38,10 +38,10 @@ router.route('/:id').get((req, res) => {
   });  
   router.route('/update/:id').post((req, res) => {  
     History.findById(req.params.id)  
-      .then(history => {  
-        history.title = req.body.title;  
-        history.description = req.body.description;  
-        history.imageURL = req.body.imageURL;   history.save()
+      .then(History => {  
+        History.title = req.body.title;  
+        History.description = req.body.description;  
+        History.imageURL = req.body.imageURL;   History.save()
        
         .then(() => res.json('Historical location updated!'))  
           .catch(err => res.status(400).json('Error: ' + err));  

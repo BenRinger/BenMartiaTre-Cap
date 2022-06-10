@@ -11,8 +11,8 @@ description: {
     required: true
 },
 imageURL: { 
-    type: String, 
-    required: true 
+    data: Buffer, 
+    contentType: String 
 }
 });
 
