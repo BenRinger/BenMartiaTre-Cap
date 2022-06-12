@@ -36,7 +36,7 @@ const historyRouter = require('./routes/historyRoutes');
 app.use('/brew', lateNightBrewRouter);
 app.use('/food', foodRouter);
 app.use('/event', eventRouter);
- app.use('/historic', historyRouter);
+app.use('/history', historyRouter);
 
 
 app.listen(port, () =>{

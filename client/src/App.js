@@ -7,6 +7,8 @@ import About from './components/About';
 import Contact from './components/Contact';
 // Page & Component Imports
 import Navbar from './components/Navbar'
+import Event from './components/Events'
+import History from './components/Historical'
 
 
 
@@ -23,18 +25,17 @@ export default class App extends Component {
   return (
     <div className="App">
       <Router>
-        <Navbar />
+        <Navbar>
         <Switch>
         <Route exact path='/' component={Home}/>
-        {/* <Route path='/about' component={About}/>
-        <Route path='/contact' component={Contact}/> */}
+         <Route path='/about' component={About}/>
+        <Route path='/contact' component={Contact}/>
         <Route path='/food' component={FoodPage} />
         <Route path='/brew' component={BrewPage} />
-        <Route path='/home' component={Home} />
-        <Route path='/about' component={About} />
-        <Route path='/contact' component={Contact} />
+        <Route path='/event' component={Event} />
+        <Route path='/history' component={History} />
        </Switch>
-
+       </Navbar>
 
       </Router>
     </div>
