@@ -11,7 +11,7 @@ const History = props => (
     <div className="flip-card">
       <div className="flip-card-inner">
         <div className="flip-card-front">
-          <img src={props.history.imageURL}alt="Renaissance Festival" />
+          <img src={props.history.imageURL}alt="" />
         </div>
         <div className="flip-card-back">
           <h3 className="first-txt">{props.history.title}</h3>

@@ -10,7 +10,7 @@ const Event = () => (
     <div className="flip-card">
       <div className="flip-card-inner">
         <div className="flip-card-front">
-          <img src={props.event.imageURL}alt="Renaissance Festival" />
+          <img src={props.event.imageURL}alt="" />
         </div>
         <div className="flip-card-back">
           <h3 className="first-txt">{props.event.title}</h3>
