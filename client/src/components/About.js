@@ -1,5 +1,6 @@
 import React from 'react'
 import Cincy from '../imgs/cincyheader.jpg'
+import "../index.css";
 //import Downtown from '../imgs/downtownAboutimage.jpg'
 
 const About = () => {

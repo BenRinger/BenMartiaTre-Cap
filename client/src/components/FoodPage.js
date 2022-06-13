@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import "../foodbrew.css";
+import "../index.css";
 // import {BACKEND_URL} from '../config'
 
 

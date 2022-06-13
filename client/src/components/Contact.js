@@ -1,9 +1,9 @@
 import React from 'react'
-import "../foodbrew.css";
+import "../index.css";
 
 const Contact = () => {
   return (
-    <section class="bottom">
+    <section class="bottom ramen">
     <header>
         <h1 class="logo">Visit Cincinnati</h1>
         <div class="toggle"></div>

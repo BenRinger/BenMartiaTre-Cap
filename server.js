@@ -32,11 +32,10 @@ const foodRouter = require('./routes/foodRestaurant');
 const eventRouter = require('./routes/eventRoutes');
 const historyRouter = require('./routes/historyRoutes');
 
-
 app.use('/brew', lateNightBrewRouter);
 app.use('/food', foodRouter);
-app.use('/event', eventRouter);
-app.use('/history', historyRouter);
+app.use('/events', eventRouter);
+app.use('/historical', historyRouter);
 
 
 app.listen(port, () =>{

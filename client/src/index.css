@@ -165,15 +165,16 @@ border: 1px solid rgba(255, 255, 255, 0.16);
 
   /* historical CSS */
 
-  body{
+  /*body{
     background-color: aqua;
-}
+}*/
+
 /* end historical CSS */
 
-body{
+/*.ramen{
   background: linear-gradient(210deg, #565656, #ababab, #ffffff, #ababab);
   color:#ffffff;
-}
+}*/
 
 img{
   width: 350px;
