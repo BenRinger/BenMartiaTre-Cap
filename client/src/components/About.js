@@ -1,6 +1,6 @@
 import React from 'react'
 import Cincy from '../imgs/cincyheader.jpg'
-import Downtown from '../imgs/downtownAboutimage.jpg'
+//import Downtown from '../imgs/downtownAboutimage.jpg'
 
 const About = () => {
   return (
@@ -9,9 +9,6 @@ const About = () => {
         <h1 class="logo">About Cincinnati</h1>
         <div class="toggle"></div>
     </header>
-
-
-  
 
    <div className="card bg-dark">
   <div className="card-body">

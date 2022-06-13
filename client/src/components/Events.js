@@ -4,7 +4,7 @@ import axios from 'axios';
 import "../index.css";
 // import {BACKEND_URL} from '../config'
 
-const Event = () => (
+const Event = props => (
    
     <div className="c6">
     <div className="flip-card">

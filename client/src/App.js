@@ -34,9 +34,8 @@ export default class App extends Component {
         <Route path='/brew' component={BrewPage} />
         <Route path='/event' component={Event} />
         <Route path='/history' component={History} />
-       </Switch>
+        </Switch>
        </Navbar>
-
       </Router>
     </div>
   );
