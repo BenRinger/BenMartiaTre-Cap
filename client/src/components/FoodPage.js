@@ -6,7 +6,7 @@ import "../foodbrew.css";
 
 const Food = props => (
 <div className="card" style={{width: '18rem'}}>
-  <img src={props.food.imageURL} className='card-img-top'  alt="..." />
+  <img src={props.food.imageURL} className='card-img-top'  alt="..."/>
   <div className="card-body">
     <h5 className="card-title">{props.food.title}</h5>
     <p className="card-text">{props.food.description}</p>
