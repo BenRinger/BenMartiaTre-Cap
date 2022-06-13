@@ -13,6 +13,6 @@ imageURL: {
 }
 });
 
-const Event = mongoose.model('Events', eventSchema);
+const Event = mongoose.model('events', eventSchema);
 
 module.exports = Event;
