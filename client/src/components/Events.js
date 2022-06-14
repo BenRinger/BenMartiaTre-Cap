@@ -1,10 +1,10 @@
-import React from 'react'
+//import React from 'react';
 import React, { Component } from 'react';
 import axios from 'axios';
-import "../index.css";
+// import "../index.css";
 // import {BACKEND_URL} from '../config'
 
-const Event = () => (
+const Event = (props) => (
    
     <div className="c6">
     <div className="flip-card">
@@ -24,16 +24,14 @@ const Event = () => (
 
 export default class Events extends Component {
   constructor(props) {  
-    super(props); 
-    
-    
+    super(props);    
     
     this.state = {
       events: []
     };  
   }
   componentDidMount() {
-    axios.get('http://localhost:5000/event/')
+    axios.get('http://localhost:5000/events/')
      .then(response => {
        this.setState({ events: response.data });
      })
@@ -48,16 +46,10 @@ export default class Events extends Component {
   }
   render() {
     return (
-
- 
-     
-      
-      <div className="bodyody">
+      <div className="">
            { this.EventsList()  }
                 </div>
 );
 }
 }
-
-
 

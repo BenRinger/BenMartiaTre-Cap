@@ -1,21 +1,25 @@
-import React from 'react'
+//import React from 'react'
 import React, { Component } from 'react';
 import axios from 'axios';
 import "../index.css";
 // import {BACKEND_URL} from '../config'
 
-const History = props => (
+const History = (props) => (
 
 
 <div className="c6">
     <div className="flip-card">
       <div className="flip-card-inner">
         <div className="flip-card-front">
+<<<<<<< HEAD
           <img src={props.history.imageURL}alt="" />
+=======
+          <img src={props.historical.imageURL}alt="Renaissance Festival" />
+>>>>>>> 1b28fba447a9851babe4d957924c57f0b689bd38
         </div>
         <div className="flip-card-back">
-          <h3 className="first-txt">{props.history.title}</h3>
-          <p className="second-txt glass alignT">{props.history.description}</p>
+          <h3 className="first-txt">{props.historical.title}</h3>
+          <p className="second-txt glass alignT">{props.historical.description}</p>
         </div>
       </div>
     </div>
@@ -29,21 +33,21 @@ export default class Histories extends Component {
     
     
     this.state = {
-      histories: []
+      historicals: []
     };  
   }
   componentDidMount() {
-    axios.get('http://localhost:5000/history/')
+    axios.get('http://localhost:5000/historical/')
      .then(response => {
-       this.setState({ histories: response.data });
+       this.setState({ historicals: response.data });
      })
      .catch((error) => {
         console.log(error);
      })
   }
-  FoodsList() {
-    return this.state.histories.map(currentHistory => {
-      return <History history={currentHistory} key={currentHistory._id}/>;
+  historicalList() {
+    return this.state.historicals.map(currentHistory => {
+      return <History historical={currentHistory} key={currentHistory._id}/>;
     })
   }
   render() {
@@ -53,10 +57,8 @@ export default class Histories extends Component {
      
       
       <div className="bodyody">
-           { this.HistoriesList()  }
+           { this.historicalList()  }
                 </div>
 );
 }
 }
-
-

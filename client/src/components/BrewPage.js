@@ -3,22 +3,14 @@ import axios from 'axios';
 import "../index.css";
 // import {BACKEND_URL} from '../config'
 const Brew = props => (
-   <div className="card mb-3 card-style" id="card-style">
-  <div className="row g-0">
-  <div className="col-md-4">
-<img className="" src={props.brew.imageURL} alt=""/>
+<div className="card ramen" style={{width: '18rem'}}>
+  <img src={props.brew.imageURL} className='card-img-top'  alt="..." />
+  <div className="card-body">
+    <h5 className="card-title">{props.brew.title}</h5>
+    <p className="card-text">{props.brew.description}</p>
+    <a href="#" className="btn btn-primary">{props.brew.title}</a>
+  </div>
 </div>
-<div className="col-md-8">
-<div className="card-body">
-   <h4 className="card-title titlestyle">{props.brew.title}</h4>
-   <p className='card-text wonder'>{props.brew.description}</p>
-   <p> </p>
- 
- 
- </div>
- </div>
- </div>
- </div>
 
   
 )
